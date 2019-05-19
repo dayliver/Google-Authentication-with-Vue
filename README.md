@@ -5,6 +5,13 @@ a demo Vue app which authenticates a Google user
 ```
 git clone https://github.com/dayliver/Google-Authentication-with-Vue
 ```
+* Insert your Google cliend ID in App.vue in ./src.
+```
+import GoogleSignInButton from 'vue-google-signin-button-directive'
+import axios from 'axios'
+let clientID = 'YOUR GOOGLE CLIEND ID' // ← Here your cliend ID
+export default {
+```
 * Run the code.
 ```
 npm run serve
