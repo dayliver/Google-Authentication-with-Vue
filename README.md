@@ -9,8 +9,14 @@ git clone https://github.com/dayliver/Google-Authentication-with-Vue
 ```
 import GoogleSignInButton from 'vue-google-signin-button-directive'
 import axios from 'axios'
-let clientID = 'YOUR GOOGLE CLIEND ID' // ← Here your cliend ID
+let clientID = 'YOUR GOOGLE CLIEND ID' // ← Here your cliend ID (Line #17)
 export default {
+```
+* Change the destination URL.
+```
+axios
+  .get('http://YOUR DESTINATION URL') // Change the URL (Line #30)
+  .then(response => {
 ```
 * Run the code.
 ```
