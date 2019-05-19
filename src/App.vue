@@ -5,8 +5,6 @@
       <li>npm i vue-google-signin-button-directive --save</li>
       <li>npm i axios --save</li>
       <li>Get a client ID from Google developer's console.</li>
-      <li>If you succeed in getting idToken from Google, you can run a PHP file at <i>auth.hwaryong.com</i> with axios.</li>
-      <li>If you apply this procedure to your app, you had better use PHP session.</li>
     </ol>
     <button v-google-signin-button="clientID" class="login-button">Continue with Google</button>
     <div id="output"></div>
@@ -16,7 +14,7 @@
 <script>
 import GoogleSignInButton from 'vue-google-signin-button-directive'
 import axios from 'axios'
-let clientID = '100854524431-dgt3uc9jegi9245mr5hmgq18n30oevd1.apps.googleusercontent.com'
+let clientID = 'YOUR GOOGLE CLIEND ID'
 export default {
   directives: {
     GoogleSignInButton
